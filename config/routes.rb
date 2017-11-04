@@ -1,6 +1,23 @@
 Rails.application.routes.draw do
+  get 'mine/index'
+  get 'mine/cxjl'
+  get 'mine/qcgz'
+  get 'mine/wdbx'
+  get 'mine/wddk'
+  get 'mine/wdqc'
+  get 'mine/xryh'
+  get 'mine/yxsj'
+  get 'mine/ckgd'
+
+  get 'recommend/index'
+  get 'recommend/sqbx'
+  get 'recommend/xcjs'
+  get 'recommend/zbpj'
+
   get 'welcome/index'
-  
+  get 'welcome/cdz'
+  get 'welcome/clcx'
+  get 'welcome/wzcx'
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
