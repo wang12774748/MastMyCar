@@ -1,0 +1,25 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>MastMyCar	</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h2>
+MastMyCar
+</h2>
+
+  <p>剩余电量：95% </p>
+  <button><%= link_to "充电桩查询", welcome_cdz_path %></button>
+  <button><%= link_to "车辆状态", welcome_clcx_path %></button>
+  <button><%= link_to "违章查询", welcome_wzcx_path %></button>
+
+<footer>
+    <a href="<%= welcome_index_path %>">首页</a>
+    <a href="<%= recommend_index_path %>">推荐</a>
+    <a href="<%= mine_index_path %>">我的</a>
+</footer>
+</body>
+</html>
